@@ -20,7 +20,7 @@ Config.Setup = {
     -- Target system, available options are: 'ox_target', 'qb-target', 'qtarget', 'custom' & 'none'
     -- 'custom' needs to be added to client/functions.lua
     -- If 'none' then TextUI is used instead of targeting
-    target = 'none',
+    target = 'ox_target',
     -- Notification system, available options are: 'ox_lib', 'esx', 'qb', 'okok' & 'custom'
     -- 'custom' needs to be added to client/functions.lua
     notify = 'ox_lib',
@@ -30,7 +30,7 @@ Config.Setup = {
     -- 'auto_clear' is a system to automatically clear shops after certain amount of time
     auto_clear = {
         -- Do you want to enable the auto clearing system?
-        enable = false,
+        enable = true,
         -- If enable = true, how long (in minutes) should shops be cleared?
         interval = 60
     }
@@ -44,7 +44,7 @@ Config.Shops = {
     ['vinewood'] = { -- Unique identifier for this shop
         name = 'Vinewood Pawn & Jewelry', -- Shop name
         slots = 25, -- How many slots are available
-        weight = 100000, -- How much weight is available
+        weight = 10000000, -- How much weight is available
         coords = vec4(-1459.2361, -413.2576, 36.2567, 343.8426), -- Where this shop exists
         radius = 1.0, -- How large of a circle zone radius (for targeting only)
         spawnPed = false, -- Spawn a ped to interact with here?
@@ -59,11 +59,9 @@ Config.Shops = {
             -- What items can be sold here
             -- Any item not in this list, cannot be sold here
             -- ['itemSpawnName'] = { label = 'Item Name', price = sellPrice }
-            ['water'] = { label = 'Water', price = 50 },
-            ['panties'] = { label = 'Knickers', price = 10 },
-            ['lockpick'] = { label = 'Lockpick', price = 25 },
-            ['phone'] = { label = 'Phone', price = 150 },
-            ['armour'] = { label = 'Bulletproof Vest', price = 225 },
+            ['rolex'] = { label = 'Gold watch', price = 83333 },
+            ['goldchain'] = { label = 'gold chain', price = 8333 },
+            ['diamond_ring'] = { label = 'diamond ring', price = 5952 },
             -- Add & remove items here as desired
             -- Be sure to follow the same format as above
         },
